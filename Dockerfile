@@ -23,7 +23,7 @@ FROM nginx:alpine
 COPY --from=build /app/dist/crudtuto-Front /usr/share/nginx/html
 
 # Expose port 80 to access the app
-EXPOSE 80
+EXPOSE 4200
 
 # Run Nginx in the foreground
 CMD ["nginx", "-g", "daemon off;"]
